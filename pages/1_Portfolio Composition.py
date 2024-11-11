@@ -125,6 +125,7 @@ with vis6:
       balanceSheet_df = pd.concat([balanceSheet_df,t.balance_sheet.add_prefix(t.info['symbol']+'_')],axis=1)
     else: 
       balanceSheet_df = t.balance_sheet.add_prefix(t.info['symbol']+'_')
+    break
   balanceSheet_df
   
 with vis7:
@@ -134,6 +135,7 @@ with vis7:
       cashFlow_df = pd.concat([cashFlow_df,t.cash_flow.add_prefix(t.info['symbol']+'_')],axis=1)
     else: 
       cashFlow_df = t.cash_flow.add_prefix(t.info['symbol']+'_')
+    break
   cashFlow_df
 
 with vis8:
@@ -143,6 +145,7 @@ with vis8:
       incomeStmt_df = pd.concat([incomeStmt_df,t.income_stmt.add_prefix(t.info['symbol']+'_')],axis=1)
     else: 
       incomeStmt_df = t.income_stmt.add_prefix(t.info['symbol']+'_')
+    break
   incomeStmt_df
 
 
