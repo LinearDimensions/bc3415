@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-sudo apt-get update && sudo apt-get install -y gfortran
+apt-get update && apt-get install -y gfortran
